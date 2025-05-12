@@ -4529,6 +4529,7 @@ figure.highlight pre .javascript .function {
   --waline-font-size: 1.1em;
   --waline-theme-color: #49b1f5;
   --waline-active-color: #ff7242;
+  overflow: visible !important;
 }
 #waline-wrap .wl-comment-actions > button:not(last-child) {
   padding-right: 4px;
