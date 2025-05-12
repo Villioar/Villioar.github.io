@@ -4529,10 +4529,16 @@ figure.highlight pre .javascript .function {
   --waline-font-size: 1.1em;
   --waline-theme-color: #49b1f5;
   --waline-active-color: #ff7242;
-  overflow: visible !important;
 }
 #waline-wrap .wl-comment-actions > button:not(last-child) {
   padding-right: 4px;
+}
+#waline-wrap .wl-emoji-popup {
+  display: block !important;
+  opacity: 1 !important;
+  -ms-filter: none !important;
+  filter: none !important;
+  z-index: 9999 !important;
 }
 .twikoo .tk-content p {
   margin: 3px 0;
