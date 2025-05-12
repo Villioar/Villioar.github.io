@@ -193,7 +193,7 @@
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
     const waline = Fn({
       el: el.querySelector('#waline-wrap'),
-      serverURL: 'main-theta-eight-36.vercel.app',
+      serverURL: 'waline.villioar.xyz',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       comment: false,
@@ -242,7 +242,7 @@
   }
 })()</script><script>(() => {
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
-  const option = {"placeholder":"无需登录也可以评论，PC端优先推荐使用chrome浏览器，btw，你的IP会被记录哦"}
+  const option = {"placeholder":"无需登录也可以评论，PC端优先推荐使用chrome浏览器，btw，评论的IP会被记录哦"}
 
   const initValine = (el, path) => {
     if (isShuoshuo) {
