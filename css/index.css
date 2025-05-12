@@ -3301,10 +3301,6 @@ figure.highlight pre .javascript .function {
 #post-comment .comment-head .comment-switch .first-comment {
   color: #49b1f5;
 }
-#post-comment .comment-head .comment-switch .wl-emoji-popup .wl-emoji {
-  max-width: 2em !important;
-  max-height: 3.5em !important;
-}
 #post-comment .comment-head .comment-switch .second-comment {
   color: #ff7242;
 }
