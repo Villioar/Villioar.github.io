@@ -164,7 +164,7 @@
   const destroyWaline = ele => ele.destroy()
 
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
-    const { Waline } = Fn({
+    const waline = Fn({
       el: el.querySelector('#waline-wrap'),
       serverURL: 'waline.villioar.xyz',
       pageview: false,
