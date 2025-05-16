@@ -193,14 +193,13 @@
       placeholder: '无需登录也可以评论，欢迎各位的踊跃评论，我真的很想知道各位对这篇文章中的人和事的看法，群众是我最重要的心理医生，而我又是自己最好的心理医生，你也可以把这里当作许愿墙，和大家分享一下你的心愿，说不定哪一天你的愿望就实现了哦，btw，评论的IP会被记录哦' // 修改默认文字
     }
   }
-
   const destroyWaline = ele => ele.destroy()
 
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
     const waline = Fn({
       el: el.querySelector('#waline-wrap'),
       serverURL: 'waline.villioar.xyz',
-      version: '3.5.6',  // 显式版本声明
+      version: '3.5.6',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       comment: false,
@@ -222,9 +221,8 @@
   const loadWaline = (el, path) => {
     if (initFn) initWaline(initFn, el, path)
     else {
-      // 强制指定版本路径
-      btf.getCSS('https://unpkg.com/@waline/client@3.5.6/dist/waline.css')
-        .then(() => import('https://unpkg.com/@waline/client@3.5.6/dist/waline.js'))
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
         .then(({ init }) => {
           initFn = init || Waline.init
           initWaline(initFn, el, path)
