@@ -1,1 +1,0 @@
-{"env":{"NODE_OPTIONS":"--experimental-require-module"},"builds":[{"src":"robots.txt","use":"@vercel/static"},{"src":"index.cjs","use":"@vercel/node","config":{"includeFiles":[]}}],"rewrites":[{"source":"/((?!robots\\.txt$).*)","destination":"index.cjs"}]}
