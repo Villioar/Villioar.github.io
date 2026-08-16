@@ -167,7 +167,7 @@
   let initFn = window.walineFn || null
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
   const option = {
-    ...{"meta":["nick","mail"],"requiredMeta":["nick"],"lang":"zh-CN","reaction":true,"DISABLE_REGION":false,"recordIP":true,"highlight":true,"pageSize":10,"enableQQ":true,"emoji":["//unpkg.com/@waline/emojis@1.2.0/weibo","//unpkg.com/@waline/emojis@1.2.0/tieba","//unpkg.com/@waline/emojis@1.2.0/bilibili","//unpkg.com/@waline/emojis@1.2.0/qq"]},
+    ...{"meta":["nick","mail"],"requiredMeta":["nick"],"lang":"zh-CN","DISABLE_REGION":false,"recordIP":true,"highlight":true,"pageSize":10,"enableQQ":true,"emoji":["//unpkg.com/@waline/emojis@1.2.0/weibo","//unpkg.com/@waline/emojis@1.2.0/tieba","//unpkg.com/@waline/emojis@1.2.0/bilibili","//unpkg.com/@waline/emojis@1.2.0/qq"]},
     // 新增自定义配置 
     locale: {
       placeholder: '欢迎评论，无需登录也可评论，你也可以把这里当作许愿墙，和大家分享一下你的心愿，说不定哪一天你的愿望就实现了哦，btw，评论的IP会被记录哦' // 修改默认文字
@@ -179,7 +179,7 @@
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
     const waline = Fn({
       el: el.querySelector('#waline-wrap'),
-      serverURL: 'waline2.villioar.top',
+      serverURL: 'waline.villioar.top',
       version: '3.5.6',  // 显式版本声明
       pageview: false,
       dark: 'html[data-theme="dark"]',
@@ -245,7 +245,7 @@
       appId: 'HeBtpAPFWxceCyj0tPzjoB4v-MdYXbMMI',
       appKey: 'zGpDaxCdFnBtG9CEeJdxA0H1',
       avatar: 'monsterid',
-      serverURLs: 'https://vv-rw2q.vercel.app/api/comment',
+      serverURLs: 'https://fx9ezhxb.api.lncldglobal.com',
       emojiMaps: "",
       visitor: true,
       emoji: [
